@@ -1,0 +1,137 @@
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #fff0f5;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  color:black;
+  margin-bottom: 10px;
+}
+
+.about-text h1 span {
+  color: #e91e63; 
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color:black;
+  margin-bottom: 20px;
+}
+
+.readmore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.readmore-button:hover {
+  background-color: #c2185b;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (min-width: 1200px) {
+  .about-text h1 {
+    font-size: 3.2rem;
+  }
+
+  .about-text p {
+    font-size: 1.4rem;
+  }
+
+  .about-image img {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-text p {
+    font-size: 1.2rem;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .about-image img {
+    max-width: 90%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .readmore-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .about-image img {
+    max-width: 95%;
+  }
+}
+
